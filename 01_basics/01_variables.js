@@ -1,12 +1,12 @@
 // const --> cannot be changed
-// var --> generally not used
-// let --> 
+// var --> generally not used. Not block scoped, can be accessed from anywhere
+// let --> block scoped, available only inside the function
 
 const accountId = 144553
 let accountEmail =  "xyz@gmail.com"
 var accountPassword = "12345"
 accountCity = "Jaipur"
-let accountState
+let accountState   // value is "undefined"
 
 // accountId = 2  "Not Allowed"
 
