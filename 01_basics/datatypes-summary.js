@@ -51,3 +51,27 @@ console.log(typeof heroes); //object
 console.log(typeof myObj); // object
 console.log(typeof myFunction); // result is 'function', but it is actually called 'object function'
 
+
+// ****************************************************************************
+
+// Stack (primitive), Heap (non-primitive)
+// Stack --> copy, Heap --> reference
+
+let myYoutubename = "xyzdotcom"
+
+let anothername = myYoutubename
+anothername = "abcdotcom"
+
+console.log(anothername);
+console.log(myYoutubename);
+
+let user = {
+  email: "user@google.com",
+  upi: "user@ybl",
+}
+
+let user2 = user
+user2.email = "user2@google.com"
+
+console.log(user.email);
+console.log(user2.email);
